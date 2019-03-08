@@ -8,7 +8,7 @@
 const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
-
+const Button = require('react-bootstrap/Button');
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
@@ -193,6 +193,15 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
+        <Button variant="primary">Primary</Button>
+  <Button variant="secondary">Secondary</Button>
+  <Button variant="success">Success</Button>
+  <Button variant="warning">Warning</Button>
+  <Button variant="danger">Danger</Button>
+  <Button variant="info">Info</Button>
+  <Button variant="light">Light</Button>
+  <Button variant="dark">Dark</Button>
+  <Button variant="link">Link</Button>
           <Features />
           <FeatureCallout />
           <LearnHow />
